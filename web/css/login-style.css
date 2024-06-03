@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.background {
+  background: url('../img/background.png')
+    no-repeat center center/cover;
+  position: absolute;
+  top: -20px;
+  bottom: -20px;
+  left: -20px;
+  right: -20px;
+  z-index: -1;
+  filter: blur(20px);
+}
+.double-button{
+  display: flex;
+}
+.submitButton{
+  margin-right: 15px;
+}
+#regist{
+  height: 20px;
+  position: relative;
+  float: right;
+  color: #2A86BA;
+
+}
+#title{
+  width:364.88px;
+  height: 45px;
+}

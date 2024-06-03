@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.11/tailwind.min.css"
+      integrity="sha512-KO1h5ynYuqsFuEicc7DmOQc+S9m2xiCKYlC3zcZCSEw0RGDsxcMnppRaMZnb0DdzTDPaW22ID/gAGCZ9i+RT/w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/regist.css" />
+    <title>注册</title>
+  </head>
+  <body>
+    <div class="background" id="background"></div>
+    <div class="bg-white rounded p-10 text-center shadow-md">
+      <h1 class="text-3xl" id="title">注册</h1>
+      <p class="text-sm text-gray-700">注册一个账号</p>
+        <form id="formData">
+      <div class="my-4 text-left">
+          <div>
+              <label for="user_name" class="text-gray-900">用户名:</label>
+              <label id="error-username" for="user_name" class="text-gray-900" style="color: #FD3555;display: none">用户名格式不正确</label>
+              <label id="error-username-have" for="user_name" class="text-gray-900" style="color: #FD3555;display: none">用户名已存在</label>
+          </div>
+
+        <input
+          type="text"
+          class="border block w-full p-2 mt-2 rounded"
+          id="user_name"
+          placeholder="输入6-20位的数字或字母"
+          name="user_name"
+        />
+      </div>
+
+      <div class="my-4 text-left">
+          <div>
+              <label for="user_name" class="text-gray-900">密码:</label>
+              <label id="error-password" for="user_name" class="text-gray-900" style="color: #FD3555;display: none">密码格式不正确</label>
+            </div>
+        <input
+          type="password"
+          class="border block w-full p-2 mt-2 rounded"
+          id="password"
+          name="password"
+          placeholder="输入6-20位的数字或字母"
+        />
+          <div class="my-4 text-left">
+              <div>
+                  <label for="user_name" class="text-gray-900">邮箱:</label>
+                  <label id="error-email" for="email" class="text-gray-900" style="color: #FD3555;display: none">邮箱格式不正确</label>
+              </div>
+              <input
+                      type="email"
+                      class="border block w-full p-2 mt-2 rounded"
+                      id="email"
+                      name="email"
+                      placeholder="输入你的邮箱"
+              />
+      </div>
+            <div class="my-4 text-left">
+                <div>
+                    <label for="mailcheck" class="text-gray-900">验证码:</label>
+                    <label id="error-mailcheck" for="mailcheck" class="text-gray-900" style="color: #FD3555;display: none">验证码不正确</label>
+                </div>
+                <input
+                        class="border block w-full p-2 mt-2 rounded"
+                        id="mailcheck"
+                        name="check"
+                        placeholder="输入6位的数字邮件验证码"
+                />
+                <button
+                type="button"
+                id="sendMail"
+                >
+                    发送邮箱验证码<button/>
+            </div>
+
+
+<div class="double-button" >
+      <button style="flex: 2"
+        class="bg-black text-white py-2 mt-4 inline-block w-full rounded submitButton"
+        type="button"
+              id="btn"
+      >
+        确认
+      </button>
+      <button
+              class="bg-black text-white py-2 mt-4 inline-block w-full rounded button submitButton"
+              type="submit"
+              style="flex: 1;margin-right: 0px"
+      >
+          <a href="/index.html">取消</a>
+      </button>
+
+</div>
+        </form>
+    </div>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.js"></script>
+    <script src="js/regist.js"></script>
+    <script src="js/SM3.js"></script>
+  </body>
+</html>
